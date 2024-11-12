@@ -11,6 +11,7 @@ import PageLayout from "./PageLayout";
 import Search from "./pages/Search";
 import Business from "./pages/business";
 import University from "./pages/University";
+import Profile from "./pages/Profile";
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 						<Route path="/search" element={<Search />} />
 						<Route path="/courses" element={<Courses />} />
 						<Route path="courses/:id" element={<Course />} />
+						<Route path="/profile" element={<Profile />} />
 					</Route>
 					<Route path="*" element={<NotFoundError />} />
 				</Routes>

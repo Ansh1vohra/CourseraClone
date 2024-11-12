@@ -335,7 +335,7 @@ function NavIndividual({setLogin, setRegister}) {
 									{profileDropdown && (
 										<div className="absolute mt-2 w-48 right-0 bg-white border rounded-md shadow-lg p-2">
 											<NavLink
-												to="#"
+												to="/profile"
 												className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
 											>
 												My Account
