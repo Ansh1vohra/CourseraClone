@@ -3,7 +3,7 @@ import logos from "../../assets/business/logos.png";
 
 const HighQualityContent = () => {
 	return (
-		<div className="flex flex-col md:flex-row items-center justify-between md:items-start bg-white py-8 space-y-8 md:space-y-0 md:space-x-16 px-5 lg:px-16 xl:px-28">
+		<div className="flex flex-col-reverse gap-5 md:flex-row items-center justify-between md:items-start bg-white py-8 space-y-8 md:space-y-0 md:space-x-16 px-5 lg:px-16 xl:px-28">
 			{/* Image Section */}
 			<div className="w-full md:w-1/2 flex">
 				<img src={logos} alt="Partner Logos" className="max-w-full h-auto object-contain" />

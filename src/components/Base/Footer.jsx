@@ -46,7 +46,7 @@ function Footer({ childContact }) {
                 </div>
 
                 {/* More Column */}
-                <div className="text-left">
+                <div className="text-left col-span-2 sm:col-span-1">
                     <h2 className="font-semibold text-lg mb-4">More</h2>
                     <ul className="space-y-2 text-gray-600">
                         <li><Link to="/press" className='hover:font-bold'>Press</Link></li>
@@ -65,9 +65,9 @@ function Footer({ childContact }) {
                 </div>
 
                 {/* Mobile App Column */}
-                <div className="mb-8 text-center sm:col-span-2 md:col-span-1 mx-auto">
+                <div className="mb-8 col-span-2 text-center sm:col-span-2 md:col-span-1 mx-auto">
                     <h2 className="font-semibold text-lg mb-4">Mobile App</h2>
-                    <ul className="space-y-8 text-gray-600">
+                    <ul className="flex md:flex-col gap-5">
                         <li><a href="https://apps.apple.com/us/app/coursera-grow-your-career/id736535961" target='_blank'><img src={AppStore} alt="" className='rounded-lg h-auto w-48'/></a></li>
                         <li><a href="https://play.google.com/store/apps/details?id=org.coursera.android&hl=en" target='_blank'><img src={PlayStore} alt="" className='rounded-lg h-auto w-48'/></a></li>
                     </ul>

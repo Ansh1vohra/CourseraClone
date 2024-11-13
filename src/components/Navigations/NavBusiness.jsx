@@ -10,22 +10,25 @@ const NavBusiness = () => {
 	const handleDropdown = (menu) => {
 		setDropdownOpen(dropdownOpen === menu ? null : menu);
 	};
+
 	return (
 		<nav
 			className={`${
 				direction === "down" ? "top-0" : "top-0 lg:top-9"
-			} sticky bg-white z-20 flex items-center text-gray-500 transition-all duration-300 drop-shadow border-b border-gray-300 lg:px-16 xl:px-28 px-5 py-5`}
+			} sticky bg-white z-20 flex items-center text-gray-500 transition-all duration-300 drop-shadow border-b border-gray-300 px-5 py-5 lg:px-16 xl:px-28 flex-wrap`}
 		>
 			<img
 				src={courseraLogo}
 				alt="Coursera for Business"
-				className="h-5 sm:h-6 flex-1"
+				className="h-5 sm:h-6 flex-shrink-0 mr-4"
 			/>
-			<div className="flex-grow justify-center space-y-4 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row items-center">
+
+			{/* Navbar links section */}
+			<div className="flex flex-grow justify-center flex-wrap items-center space-x-4 sm:space-x-6">
 				<div className="relative">
 					<button
 						onClick={() => handleDropdown("whyCoursera")}
-						className="flex items-center hover:text-blue-600 mr-5"
+						className="flex items-center hover:text-blue-600"
 					>
 						Why Coursera{" "}
 						{dropdownOpen === "whyCoursera" ? (
@@ -35,7 +38,7 @@ const NavBusiness = () => {
 						)}
 					</button>
 					{dropdownOpen === "whyCoursera" && (
-						<div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg py-2 w-48 left-[-25px]">
+						<div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg py-2 w-48 left-0">
 							<a
 								href="#"
 								className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -57,10 +60,11 @@ const NavBusiness = () => {
 						</div>
 					)}
 				</div>
+
 				<div className="relative">
 					<button
 						onClick={() => handleDropdown("solutions")}
-						className="flex items-center hover:text-blue-600 mr-5"
+						className="flex items-center hover:text-blue-600"
 					>
 						Solutions{" "}
 						{dropdownOpen === "solutions" ? (
@@ -92,10 +96,11 @@ const NavBusiness = () => {
 						</div>
 					)}
 				</div>
+
 				<div className="relative">
 					<button
 						onClick={() => handleDropdown("resources")}
-						className="flex items-center hover:text-blue-600 mr-5"
+						className="flex items-center hover:text-blue-600"
 					>
 						Resources{" "}
 						{dropdownOpen === "resources" ? (
@@ -127,14 +132,17 @@ const NavBusiness = () => {
 						</div>
 					)}
 				</div>
-				<a href="#" className="hover:text-blue-600 mr-5">
+
+				<a href="#" className="hover:text-blue-600">
 					For Teams
 				</a>
-				<a href="#" className="hover:text-blue-600 mr-5">
+				<a href="#" className="hover:text-blue-600">
 					Compare Plans
 				</a>
 			</div>
-			<button className="flex-1 bg-blue-700 text-white px-6 py-2 rounded text-lg font-semibold mt-4 sm:mt-0">
+
+			{/* Contact Sales Button */}
+			<button className="bg-blue-700 text-white px-4 py-2 rounded text-lg font-semibold mt-4 lg:mt-0">
 				Contact Sales
 			</button>
 		</nav>

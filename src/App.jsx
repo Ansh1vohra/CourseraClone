@@ -9,9 +9,10 @@ import Contact from "./components/Services/Contact";
 import NotFoundError from "./pages/errors/NotFoundError";
 import PageLayout from "./PageLayout";
 import Search from "./pages/Search";
-import Business from "./pages/business";
+import Business from "./pages/Business";
 import University from "./pages/University";
 import Profile from "./pages/Profile";
+import Module from "./pages/Module";
 
 function App() {
 	return (
@@ -27,8 +28,9 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/search" element={<Search />} />
 						<Route path="/courses" element={<Courses />} />
-						<Route path="courses/:id" element={<Course />} />
 						<Route path="/profile" element={<Profile />} />
+						<Route path="/courses/:id" element={<Course />} />
+						<Route path="/courses/:id/module/:module" element={<Module />} />
 					</Route>
 					<Route path="*" element={<NotFoundError />} />
 				</Routes>

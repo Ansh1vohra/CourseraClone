@@ -92,12 +92,12 @@ function LeadYourCompany() {
 						<input
 							type="text"
 							placeholder="First Name"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 						<input
 							type="text"
 							placeholder="Last Name"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 					</div>
 					<br />
@@ -105,12 +105,12 @@ function LeadYourCompany() {
 						<input
 							type="email"
 							placeholder="Work Email Address"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 						<input
 							type="tel"
 							placeholder="Phone Number"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 					</div>
 					<br />
@@ -118,12 +118,12 @@ function LeadYourCompany() {
 						<input
 							type="text"
 							placeholder="Job Title"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 						<input
 							type="text"
 							placeholder="Expected number of learners"
-							className="border-2 border-gray-500 p-3 rounded-md placeholder-black"
+							className="border-2 border-gray-500 p-3 rounded-md bg-white placeholder-gray-500"
 						/>
 					</div>
 					<br />
@@ -137,13 +137,13 @@ function LeadYourCompany() {
 					<input
 						type="text"
 						placeholder="Country"
-						className="border-2 border-gray-700 p-3 rounded-md w-full placeholder-black"
+						className="border-2 border-gray-700 p-3 rounded-md w-full bg-white placeholder-gray-500"
 					/>
 					<br />
 					<input
 						type="text"
 						placeholder="Which best describes your needs?"
-						className="border-2 border-gray-700 p-3 rounded-md w-full placeholder-black"
+						className="border-2 border-gray-700 p-3 rounded-md w-full bg-white placeholder-gray-500"
 					/>
 					<br />
 

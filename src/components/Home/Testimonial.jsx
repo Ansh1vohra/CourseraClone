@@ -14,20 +14,20 @@ const Testimonial = () => {
 			</div>
 
 			{/* Testimonials Section with Chevron Arrows */}
-			<div className="flex flex-col items-center mb-10">
-				<div className="flex items-center space-x-6 justify-center">
+			<div className="flex flex-col items-center mb-10 px-4 md:px-0">
+				<div className="flex items-center space-x-2 sm:space-x-6 justify-center">
 					{/* Left Chevron */}
 					<button className="p-2">
-						<FiChevronLeft className="text-blue-500 w-10 h-10" />
+						<FiChevronLeft className="text-blue-500 w-8 h-8 sm:w-10 sm:h-10" />
 					</button>
 
 					{/* Testimonials */}
-					<div className="flex flex-row space-x-20">
-						<div className="flex flex-col items-center w-60 p-4 text-center">
+					<div className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-20">
+						<div className="flex flex-col items-center w-full sm:w-60 p-4 text-center">
 							<img
 								src={user1}
 								alt="User 1"
-								className="w-24 h-24 rounded-full border-2 border-gray-300"
+								className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-gray-300"
 							/>
 							<h3 className="mt-4 text-blue-700 font-medium">Julio R.</h3>
 							<p className="text-sm font-bold text-gray-700">Web Developer</p>
@@ -41,11 +41,11 @@ const Testimonial = () => {
 							</p>
 						</div>
 
-						<div className="flex flex-col items-center w-60 p-4 text-center">
+						<div className="flex flex-col items-center w-full sm:w-60 p-4 text-center">
 							<img
 								src={user2}
 								alt="User 2"
-								className="w-30 h-24 rounded-full border-2 border-gray-300"
+								className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-gray-300"
 							/>
 							<h3 className="mt-4 text-blue-700 font-medium">Kara A.</h3>
 							<p className="text-sm text-gray-700 font-calibri font-bold">
@@ -61,11 +61,11 @@ const Testimonial = () => {
 							</p>
 						</div>
 
-						<div className="flex flex-col items-center w-60 p-4 text-center">
+						<div className="flex flex-col items-center w-full sm:w-60 p-4 text-center">
 							<img
 								src={user3}
 								alt="User 3"
-								className="w-24 h-24 rounded-full border-2 border-gray-300"
+								className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-gray-300"
 							/>
 							<h3 className="mt-4 text-blue-700 font-medium">Mirela I.</h3>
 							<p className="text-sm text-gray-700 font-calibri font-bold">
@@ -84,7 +84,7 @@ const Testimonial = () => {
 
 					{/* Right Chevron */}
 					<button className="p-2">
-						<FiChevronRight className="text-blue-500 w-10 h-10" />
+						<FiChevronRight className="text-blue-500 w-8 h-8 sm:w-10 sm:h-10" />
 					</button>
 				</div>
 

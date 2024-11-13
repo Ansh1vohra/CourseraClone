@@ -15,9 +15,10 @@ import TrainingProgramsPage from "../components/Business/TrainingProgramsPage";
 import EmployeeEngagement from "../components/Business/EmployeeEngagement";
 import LeadYourCompany from "../components/Business/LeadYourCompany";
 import InfoSection from "../components/Business/InfoSection";
+import { Body, Divider, Head, Stat, Stats } from "../components/UI/Stats";
 
 const CompanyLogos = () => (
-	<div className="max-w-5xl mx-auto my-12 px-4 sm:px-6 lg:px-12 flex flex-wrap items-center">
+	<div className="max-w-5xl mx-auto mt-48 mb-20 sm:my-32 px-4 sm:px-6 lg:px-12 flex flex-wrap items-center">
 		<div className="flex-1 mb-6 sm:mb-0">
 			<div className="grid grid-cols-3 gap-6 items-center justify-items-center">
 				<img src={hubspotLogo} alt="HubSpot" className="h-16 w-auto" />
@@ -40,7 +41,7 @@ const Business = () => {
 	return (
 		<div className="font-sans">
 			{/* Main Image Section */}
-			<div className="flex flex-col sm:flex-row items-center bg-blue-50 pt-12 px-5 lg:px-16 xl:px-28">
+			<div className="relative flex flex-col sm:flex-row items-center bg-blue-50 pt-12 py-24 px-5 lg:px-16 xl:px-28">
 				<div className="flex-1 text-center sm:text-left">
 					<h1 className="text-3xl sm:text-7xl font-semibold font-sans text-gray-800 mb-14">
 						Empower your talent
@@ -75,33 +76,28 @@ const Business = () => {
 						</a>
 					</p>
 				</div>
-				<div className="flex-1 flex justify-center mt-10 sm:mt-0">
+				<div className="flex-1 h-full flex justify-center">
 					<img
 						src={girl}
 						alt="Empower your talent"
-						className="rounded-lg shadow-lg object-cover h-80 sm:h-full w-auto"
+						className="sm:h-screen object-cover"
 					/>
 				</div>
-			</div>
 
-			{/* Black Section */}
-			<div className="max-w-7xl rounded mx-auto flex flex-col sm:flex-row items-center justify-center bg-black text-white -mt-22 py-5 px-5 sm:px-0 sm:space-y-0 w-11/12 sm:*:w-1/3 sm:divide-x-2 *:py-10">
-				<div className="relative flex gap-2 items-center mx-auto px-10 sm:px-0 sm:justify-center text-center w-full">
-					<h2 className="text-4xl font-bold">24%</h2>
-					<p className="text-white w-fit">
-						Reduction in training costs
-					</p>
-				</div>
-				<div className="sm:hidden !p-0 h-[1px] w-full bg-gray-300"></div>
-				<div className="relative flex gap-2 mx-auto items-center px-10 sm:px-0 sm:justify-center text-center w-full">
-					<h2 className="text-4xl font-bold">38%</h2>
-					<p className="text-white ">Higher retention rates</p>
-				</div>
-				<div className="sm:hidden !p-0 h-[1px] w-full bg-gray-300"></div>
-				<div className="relative flex gap-2 mx-auto items-center px-10 sm:px-0 sm:justify-center text-center w-full">
-					<h2 className="text-4xl font-bold">25%</h2>
-					<p className="text-white">Improvement in performance</p>
-				</div>
+				<Stats className="absolute bottom-0 translate-y-1/2">
+					<Stat className="border-b sm:border-b-0">
+						<Head>24%</Head>
+						<Body>Reduction in training costs</Body>
+					</Stat>
+					<Stat className="border-b sm:border-b-0">
+						<Head>38%</Head>
+						<Body>Higher retention rates</Body>
+					</Stat>
+					<Stat>
+						<Head>25%</Head>
+						<Body>Improvement in performance</Body>
+					</Stat>
+				</Stats>
 			</div>
 
 			{/* Company Logos Section */}
